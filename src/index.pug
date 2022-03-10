@@ -1,0 +1,9 @@
+extends ./pages/layouts/main
+
+block variables
+    - const title = "Covid 19";
+
+block content
+    include ./pages/partials/header.pug
+    main.main
+        include ./pages/partials/intro.pug

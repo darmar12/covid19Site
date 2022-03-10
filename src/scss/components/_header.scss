@@ -1,0 +1,52 @@
+@import "vars";
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 0 15px;
+    }
+
+    &__item {
+        padding: 5px 10px;
+
+        &.active,
+        &:hover {
+            background-color: var(--main-color);
+            border-radius: 50px;
+
+            a {
+                color: var(--light-color);
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--dark-color);
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
