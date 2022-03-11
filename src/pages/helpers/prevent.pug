@@ -1,0 +1,8 @@
+mixin prevent(name, picture, webp, avif, alt)
+    section.prevent__item
+        picture.prevent__image
+            source(srcset=webp, type="image/webp")
+            source(srcset=avif, type="image/avif")
+            img(src=picture, alt=alt)
+        h4.prevent__name= name
+        p.prevent__desc Lorem ipsum dolor sit amet consectetur adipisicing elit.

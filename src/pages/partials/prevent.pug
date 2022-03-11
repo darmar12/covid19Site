@@ -1,0 +1,15 @@
+include ./../helpers/prevent.pug
+include ./../helpers/preventDouble.pug
+.prevent#prevent
+    .container.prevent__container
+        h3.title.prevent__title 
+            |How to 
+            span Prevent
+            |?
+        .prevent__content
+            +prevent('Wear A Mask', './../../images/prevent1.png', './../../images/prevent1.webp', './../../images/prevent1.avif', 'Мальчик в маске')
+            +prevent('Wash Your Hand', './../../images/prevent2.png', './../../images/prevent2.webp', './../../images/prevent2.avif', 'Мальчик отстроняется от чихающего человека без маски')
+            +prevent('Consult Doctor', './../../images/prevent3.png', './../../images/prevent3.webp', './../../images/prevent3.avif', 'Мальчик рассказвает о своих проблемах')
+            +prevent('Avoid Touching', './../../images/prevent4.png', './../../images/prevent4.webp', './../../images/prevent4.avif', 'Человек моет руки')
+            +preventDouble('Avoid Contact', './../../images/prevent5.png', './../../images/prevent5.webp', './../../images/prevent5.avif', 'Мальчик закрывает лицо руками')
+            +preventDouble('Clean Everyday', './../../images/prevent6.png', './../../images/prevent6.webp', './../../images/prevent6.avif', 'Мальчик опрыскивает вокруг себя дезинфецирующим сердством')

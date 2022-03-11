@@ -1,0 +1,44 @@
+@import "vars";
+
+.about {
+    background-color: var(--bg-grey);
+    padding: 50px 0;
+    margin: -2px 0 0;
+
+    &__container {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        gap: 0 15px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    &__title {
+        font-size: 33px;
+        font-weight: 500;
+        color: var(--dark-color);
+        margin: 0 0 20px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--light-text);
+        margin: 0 0 20px;
+    }
+
+    &__image {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import "vars";
+
+.prevent {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #fff;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__item {
+        width: 24%;
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-grey);
+        padding: 24px;
+
+        &--double {
+            width: 49%;
+        }
+    }
+
+    &__image {
+        width: 30%;
+        max-height: 165px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__name {
+        margin: 10px 0 8px;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--dark-color);
+    }
+
+    &__desc {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--dark-color);
+    }
+}
