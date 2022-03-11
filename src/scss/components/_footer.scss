@@ -1,0 +1,46 @@
+@import "vars";
+
+.footer {
+    width: 100%;
+    padding: 50px 0 20px;
+    background-color: var(--light-color);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--dark-color);
+        margin: 0 0 15px;
+    }
+
+    &__list {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: 10px 0;
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--light-text);
+        transition: all .3s linear;
+
+        &:hover {
+            color: var(--main-color);
+            border-bottom: 1px solid var(--main-color);
+        }
+    }
+}
