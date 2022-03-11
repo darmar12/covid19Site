@@ -1,0 +1,20 @@
+mixin news(name, image, date, alt)
+    article.blog__item
+        picture.blog__image
+            img(src=image, alt=alt)
+        h4.blog__name= name
+        button.btn.blog__btn Read more
+        hr.blog__line
+        .blog__footer
+            .blog__author
+                picture
+                    source(srcset='./../../images/user.webp', type="image/webp")
+                    source(srcset='./../../images/user.avif', type="image/avif")
+                    img(src='./../../images/user.png', alt='Иконка пользователя, который выложил статью')
+                p by Admin
+            .blog__date
+                picture
+                    source(srcset='./../../images/calendar.webp', type="image/webp")
+                    source(srcset='./../../images/calendar.avif', type="image/avif")
+                    img(src='./../../images/calendar.png', alt='иконка календаря')
+                time= date

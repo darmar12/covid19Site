@@ -1,0 +1,10 @@
+include ./../helpers/news.pug
+.blog#blog
+    .container.blog__container
+        h3.title.contacts__title
+            |Our latest 
+            span Blogs
+        section.blog__content
+            +news('World is fighting against Covid-19', './../../images/blog-1.svg', '01 Aug, 2022', 'Превью новости. Люди надеются маски для защиты от covid')
+            +news('Dpecial news about Covid-19', './../../images/blog-2.svg', '09 Aug, 2022', 'Превью новости. Люди дезенфицируют всю квартиру против covid')
+            +news('New trauble with Covid-19', './../../images/blog-3.svg', '22 Aug, 2022', 'Превью новости. Девушка изучает под микроскопом новый вирус covid')
