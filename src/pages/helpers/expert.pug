@@ -1,0 +1,30 @@
+mixin expert(name, desc, picture, webp, avif, alt)
+    section.experts__item
+        figure
+            picture.experts__image
+                source(srcset=webp, type="image/webp")
+                source(srcset=avif, type="image/avif")
+                img(src=picture, alt=alt)
+            figcaption.experts__share
+                a.share__link#linkFacebook(href='#', aria-label='Иконка facebook')
+                    picture.share__image
+                        source(srcset='./../../images/facebook.webp', type="image/webp")
+                        source(srcset='./../../images/facebook.avif', type="image/avif")
+                        img(src='./../../images/facebook.png', alt='Иконка facebook')
+                a.share__link#linkInstagram(href='#', aria-label='Иконка instagram')
+                    picture.share__image
+                        source(srcset='./../../images/instagram.webp', type="image/webp")
+                        source(srcset='./../../images/instagram.avif', type="image/avif")
+                        img(src='./../../images/instagram.png', alt='Иконка instagram')
+                a.share__link#linkTwitter(href='#', aria-label='Иконка twitter')
+                    picture.share__image
+                        source(srcset='./../../images/twitter.webp', type="image/webp")
+                        source(srcset='./../../images/twitter.avif', type="image/avif")
+                        img(src='./../../images/twitter.png', alt='Иконка twitter')
+                a.share__link#linkLinkedin(href='#', aria-label='Иконка linkedin')
+                    picture.share__image
+                        source(srcset='./../../images/linkedin.webp', type="image/webp")
+                        source(srcset='./../../images/linkedin.avif', type="image/avif")
+                        img(src='./../../images/linkedin.png', alt='Иконка linkedin')
+        h4.experts__name= name
+        p.experts__desc= desc
