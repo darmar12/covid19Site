@@ -19,7 +19,8 @@
     }
 
     &__item {
-        flex: 1;
+        flex: 1 32%;
+        min-height: 430px;
         padding: 25px;
         background-color: var(--light-color);
         display: flex;

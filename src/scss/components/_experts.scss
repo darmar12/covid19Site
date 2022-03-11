@@ -19,6 +19,7 @@
     }
 
     &__item {
+        flex: 1 20%;
         padding: 25px;
         background-color: var(--light-color);
         display: flex;
