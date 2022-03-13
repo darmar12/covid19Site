@@ -16,7 +16,48 @@
 }
 
 @media(max-width: 990px) {
-    //burger
+    .header {
+        &__nav {
+            width: 100%;
+            transform: translateX(-150%);
+            border-top: 1px solid var(--dark-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: -530%;
+            right: 0;
+            z-index: 99;
+            transition: all .8s linear;
+
+            &.menu--active {
+                transform: translateX(0);
+            }
+        }
+
+        &__list {
+            width: 100%;
+            flex-direction: column;
+            background-color: #fff;
+        }
+
+        &__item {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--dark-color);
+
+            &.active, 
+            &:hover {
+                border-radius: 0;
+            }
+        }
+    }
+    
+    .burger {
+        @include burger;
+    }
+
     .intro {
         &__container {
             flex-direction: column;

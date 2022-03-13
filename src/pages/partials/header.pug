@@ -4,7 +4,9 @@ header.header
             source(srcset="./../../images/logo.webp", type="image/webp")
             source(srcset="./../../images/logo.avif", type="image/avif")
             img(src="./../../images/logo.png", alt="Логотип компании Covid 19", height="", width="")
-        nav.header__nav
+        button(aria-label="Открыть меню", aria-expanded=false, data-burger).burger
+            span.burger__line
+        nav.header__nav(data-menu)
             ul.header__list
                 li.header__item.active
                     a.header__link(href="#home") Home
