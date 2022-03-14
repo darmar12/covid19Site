@@ -11,8 +11,10 @@
     }
 }
 
-@media(max-width: 1265px) {
-    //blogs
+@media(max-width: 1270px) {
+    .blog__name {
+        height: 45px;
+    }
 }
 
 @media(max-width: 990px) {
@@ -75,6 +77,16 @@
     .about__info {
         flex: 1 100%;
     }
+
+    .blog {
+        &__content {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            flex: 1 45%;
+        }
+    }
 }
 
 @media(max-width: 900px) {
@@ -107,10 +119,6 @@
         }
     }
 
-    .blog {
-        
-    }
-
     .contacts {
         &__content {
             flex-direction: column;
@@ -119,7 +127,7 @@
 
         &__form {
             width: 100%;
-            min-height: 300px;
+            min-height: 400px;
         }
 
         &__map {
@@ -154,6 +162,12 @@
         &__nav {
             flex: 1 45%;
         }
+    }
+}
+
+@media(max-width: 650px) {
+    .blog__item {
+        flex: 1 100%;
     }
 }
 
